@@ -35,7 +35,10 @@ type StoreContextValue = {
 const StoreContext = createContext<StoreContextValue | null>(null)
 
 function persist(runs: AuditRun[], activeId: string) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify({ runs, activeId }))
+  const nextActive = runs.some((run) => run.id === activeId)
+    ? activeId
+    : runs[0]?.id ?? ""
+  localStorage.setItem(STORAGE_KEY, JSON.stringify({ runs, activeId: nextActive }))
 }
 
 function isStoredRun(run: AuditRun): boolean {
@@ -43,8 +46,7 @@ function isStoredRun(run: AuditRun): boolean {
     run &&
       typeof run.id === "string" &&
       Array.isArray(run.findings) &&
-      Array.isArray(run.loot) &&
-      !run.sample
+      Array.isArray(run.loot)
   )
 }
 

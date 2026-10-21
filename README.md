@@ -25,7 +25,7 @@
 # 1. 扫
 wayfind -d corp.local -dc <DC> -u analyst -p '...' --ldaps
 
-# 2. 打开控制台，在「运行记录」导入 findings.json
+# 2. 打开控制台，导入 findings.json。也可以先载入样例。
 ```
 
 只导入 `findings.json`。路径图画当前身份的下一跳，点边上的权限能看 BloodHound 官方说明。

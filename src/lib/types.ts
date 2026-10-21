@@ -51,8 +51,6 @@ export type AuditRun = {
   profile: string
   importedAt: string
   sourceLabel: string
-  /** Old bundled samples used this; loadState drops them. */
-  sample?: boolean
   findings: FindingRow[]
   loot: LootIdentity[]
   run?: RunMeta

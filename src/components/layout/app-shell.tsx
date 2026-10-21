@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { Gate } from "@/components/gate"
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet"
 import { Skeleton } from "@/components/ui/skeleton"
 import { SidebarPanel } from "@/components/layout/sidebar"
@@ -21,7 +22,7 @@ function useDesktop() {
 }
 
 export function AppShell({ children }: { children: React.ReactNode }) {
-  const { ready, collapsed, setCollapsed } = useStore()
+  const { ready, active, collapsed, setCollapsed } = useStore()
   const [mobileOpen, setMobileOpen] = useState(false)
   const desktop = useDesktop()
 
@@ -40,6 +41,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </div>
     )
   }
+
+  if (!active) return <Gate />
 
   return (
     <div className="flex h-svh min-w-0 gap-2 overflow-hidden bg-background p-2">

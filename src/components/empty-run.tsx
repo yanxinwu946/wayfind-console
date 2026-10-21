@@ -21,12 +21,12 @@ export function EmptyRun() {
         </EmptyMedia>
         <EmptyTitle>尚未载入运行</EmptyTitle>
         <EmptyDescription>
-          导入 wayfind 的 findings.json。
+          导入 findings.json，或载入样例。
         </EmptyDescription>
       </EmptyHeader>
       <EmptyContent>
         <Button asChild>
-          <Link href="/runs">打开运行记录</Link>
+          <Link href="/">导入或载入样例</Link>
         </Button>
       </EmptyContent>
     </Empty>
