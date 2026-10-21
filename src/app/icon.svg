@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Wayfind">
+  <rect width="32" height="32" rx="8" fill="#0A0A0A"/>
+  <g transform="translate(4 4)">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="#FAFAFA" stroke-width="2"/>
+    <g transform="translate(12 12) scale(1.42) translate(-12 -12)">
+      <path fill="#FAFAFA" d="M16.24 7.76 14.12 14.12 9.88 9.88z"/>
+      <path fill="#A1A1A1" d="M14.12 14.12 7.76 16.24 9.88 9.88z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wayfind",
+  "compatibility_date": "2026-10-21",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "preview_urls": true,
+  "main": "vinext/server/fetch-handler",
+  "routes": [
+    {
+      "pattern": "wayfind.569888.xyz",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "dist/client",
+    "html_handling": "none",
+    "not_found_handling": "none",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/*",
+      "!/_next/static/*",
+      "!/*/_next/static/*"
+    ]
+  }
+}

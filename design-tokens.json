@@ -1,0 +1,40 @@
+{
+  "personality": {
+    "tone": "restrained-neutral",
+    "density": "compact",
+    "radiusPanel": "0.875rem",
+    "radiusControl": "0.625rem",
+    "typeface": "Geist / PingFang SC / Microsoft YaHei / system-ui",
+    "defaultTheme": "system"
+  },
+  "semantic": {
+    "light": {
+      "background": "#FFFFFF",
+      "sidebar": "#FAFAFA",
+      "muted": "#F5F5F5",
+      "foreground": "#0A0A0A",
+      "muted-foreground": "#737373",
+      "border": "#E5E5E5",
+      "primary": "#171717",
+      "primary-foreground": "#FFFFFF",
+      "card": "#FFFFFF"
+    },
+    "dark": {
+      "background": "#0A0A0A",
+      "sidebar": "#171717",
+      "muted": "#262626",
+      "foreground": "#FAFAFA",
+      "muted-foreground": "#A1A1A1",
+      "border": "rgba(255,255,255,0.10)",
+      "primary": "#E5E5E5",
+      "primary-foreground": "#171717",
+      "card": "#171717"
+    },
+    "status": {
+      "success": "#16A34A",
+      "warning": "#D97706",
+      "destructive": "#DC2626",
+      "chart": "#2563EB"
+    }
+  }
+}
